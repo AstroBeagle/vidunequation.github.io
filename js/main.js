@@ -14,7 +14,7 @@ button.addEventListener('click', () => {
         women_status = true;
     }
 
-    if (dunes === '' || isNaN(dunes) || (dunes <= 0)) {
+    if (dunes === '' || isNaN(dunes) || (dunes > 5) || (dunes <= 0)) {
         document.getElementById('dunes_error').innerHTML = "Please provide a valid amount of dunes";
     } else {
         document.getElementById('dunes_error').innerHTML = '';
