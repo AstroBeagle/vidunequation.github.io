@@ -29,7 +29,7 @@ button.addEventListener('click', () => {
     }
 
     if (women_status && dunes_status && intel_status) {
-        const sp = ((((women+intel)*(0.31622776601) / (5*dunes))) * 100).toFixed(2);
+        const sp = ((((women+intel)*(0.31622776601) / (2*dunes))) * 100).toFixed(2);
 
         if (sp < 25) {
             result.innerHTML = "He's probably right : " + sp + "%";
